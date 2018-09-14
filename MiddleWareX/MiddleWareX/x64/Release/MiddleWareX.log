@@ -1,0 +1,24 @@
+﻿生成启动时间为 2018/9/13 23:48:55。
+     1>项目“E:\tu\vs_project\MiddleWareX\MiddleWareX\MiddleWareX.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _CRT_SECURE_NO_WARNINGS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\MiddleWareX.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt MiddleWareX.cpp MiddleWareXCtrl.cpp
+         MiddleWareX.cpp
+     1>MiddleWareX.cpp(68): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+         MiddleWareXCtrl.cpp
+     1>MiddleWareXCtrl.cpp(450): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\tu\vs_project\MiddleWareX\x64\Release\MiddleWareX.ocx" /INCREMENTAL:NO /NOLOGO /DEF:".\MiddleWareX.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"E:\tu\vs_project\MiddleWareX\x64\Release\MiddleWareX.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\tu\vs_project\MiddleWareX\x64\Release\MiddleWareX.lib" /MACHINE:X64 /DLL x64\Release\MiddleWareX.res
+         x64\Release\MiddleWareX.obj
+         x64\Release\MiddleWareXCtrl.obj
+         x64\Release\MiddleWareXPropPage.obj
+         x64\Release\stdafx.obj
+         x64\Release\Util.obj
+            正在创建库 E:\tu\vs_project\MiddleWareX\x64\Release\MiddleWareX.lib 和对象 E:\tu\vs_project\MiddleWareX\x64\Release\MiddleWareX.exp
+         正在生成代码
+         已完成代码的生成
+         MiddleWareX.vcxproj -> E:\tu\vs_project\MiddleWareX\x64\Release\MiddleWareX.ocx
+     1>已完成生成项目“E:\tu\vs_project\MiddleWareX\MiddleWareX\MiddleWareX.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.48

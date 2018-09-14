@@ -1,0 +1,61 @@
+// MiddleWareX.idl : ActiveX 控件项目的类型库源。
+
+// 此文件将由 MIDL 编译器工具处理以
+// 产生类型库(MiddleWareX.tlb)，该类型库将成为
+// MiddleWareX.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(1C1A40F6-7177-494A-BAFC-A3DE6A80E15A), version(1.0),
+  control ]
+library MiddleWareXLib
+{
+	importlib(STDOLE_TLB);
+
+	//  CMiddleWareXCtrl 的主调度接口
+	[ 
+		uuid(77A84000-D1CC-4307-8D74-E70581B4E0FE)	
+	]
+	dispinterface _DMiddleWareX
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1)] BSTR GetMessage(BSTR name);
+			[id(2)] BSTR SetMessage(BSTR name, BSTR ualue);
+			[id(3)] void BeginWrite();
+			[id(4)] void SaveMessage();
+			[id(5)] LONG LoadMessages();
+			[id(6)] BSTR EncodeMessage(BSTR src);
+			[id(7)] BSTR DecodeMessage(BSTR src);
+			[id(8)] void BeginRead();
+			[id(9)] void EndRead();
+			[id(10)] LONG ReleaseShareMem();
+	};
+
+	//  CMiddleWareXCtrl 的事件调度接口
+
+	[ 
+		uuid(8DBBDB25-9761-4EA8-B14D-1A3300ACC113)	
+	]
+	dispinterface _DMiddleWareXEvents
+	{
+		properties:
+			//  事件接口没有任何属性
+
+		methods:
+	};
+
+	//  CMiddleWareXCtrl 的类信息
+	[
+		uuid(869C5BAF-BE33-4A20-8796-D9E0DB5B669C)
+	]
+	coclass MiddleWareX
+	{
+		[default] dispinterface _DMiddleWareX;
+		[default, source] dispinterface _DMiddleWareXEvents;
+	};
+
+};
